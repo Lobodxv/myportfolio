@@ -12,6 +12,15 @@ body {
 
 }
 
+h2.titulo {
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+}
+h2.titulo span {
+    color:#ca2df1;
+}
+
 .interface{
     max-width: 1280px;
     margin: 0 auto;
@@ -95,6 +104,11 @@ main .btnContato button{
     border-radius: 30px;
     cursor: pointer;
 }
+main .btnContato button:hover{
+    box-shadow: 0px 0px 15px #ca2df1;
+    transform: scale(1.05);
+    transition: .2s;
+}
 
 .topoSite h1{
     color:#fff;
@@ -109,4 +123,53 @@ main .btnContato button{
 .topoSite .txtTopoSite p {
     color: #fff;
     margin: 40px 0;
+}
+
+.topoSite .imgTopoSite {
+    animation-name: flutuar;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES  */
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+section.especialidades .especialidadesBox {
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 30px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+section.especialidades .especialidadesBox:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.205);
+}
+
+section.especialidades .especialidadesBox i{
+    color:#ca2df1;
+    font-size: 65px;
+}
+
+section.especialidades .especialidadesBox h3{
+    font-size: 28px;
+    margin: 15px 0;
 }
