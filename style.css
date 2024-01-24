@@ -1,0 +1,112 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{display: flex;}
+
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+
+}
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div.logo > a {
+    font-family: 'Licorice', cursive;
+    color:#ca2df1;
+    font-size: 40px;
+}
+header div.logo > a > span {
+    font-family: 'Licorice', cursive;
+    color: #bababa;     
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.10);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btnContato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ca2df1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+header .btnContato button:hover{
+    box-shadow: 0px 0px 15px #ca2df1;
+}
+
+
+/* Estilo do topo do site */
+section.topoSite{
+    padding: 40px 4%;
+}
+
+section.topoSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+main .btnContato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ca2df1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.topoSite h1{
+    color:#fff;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topoSite h1 span{
+    color: #ca2df1;
+}
+
+.topoSite .txtTopoSite p {
+    color: #fff;
+    margin: 40px 0;
+}
