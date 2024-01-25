@@ -12,6 +12,10 @@ body {
 
 }
 
+button {
+    color: #fff;
+}
+
 h2.titulo {
     font-size: 32px;
     text-align: center;
@@ -43,7 +47,11 @@ header > .interface {
 header div.logo > a {
     font-family: 'Licorice', cursive;
     color:#ca2df1;
-    font-size: 40px;
+    font-size: 50px;
+}
+header div.logo a:hover {
+    text-shadow: 0 0 20px #ffffff6c;
+    cursor: default;
 }
 header div.logo > a > span {
     font-family: 'Licorice', cursive;
@@ -132,15 +140,6 @@ main .btnContato button:hover{
     animation-iteration-count: infinite;
 }
 
-@keyframes flutuar {
-    0% {
-        top: 0;
-    }
-    100% {
-        top: 30px;
-    }
-}
-
 /* ESTILO DAS ESPECIALIDADES  */
 section.especialidades{
     padding: 40px 4%;
@@ -172,4 +171,53 @@ section.especialidades .especialidadesBox i{
 section.especialidades .especialidadesBox h3{
     font-size: 28px;
     margin: 15px 0;
+}
+
+/* Estilização da Pt.Sobre mim */
+section.sobre {
+    padding: 65px 4%;
+}
+
+section.sobre .flex{
+    align-items: center
+}
+
+.sobre .txtSobre {
+    color: #fff; 
+}
+
+.sobre .txtSobre h2{
+    font-size: 42px; 
+    line-height: 40px; 
+    margin-bottom: 30px;}
+
+.sobre .txtSobre h2 span{
+    color:#ca2df1;
+    display: block;
+}
+
+.sobre .txtSobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txtSobre button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:#ca2df1;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: .2s;
+}
+.sobre .txtSobre button:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 20px #ce09ffa0;
+}
+
+.sobre .imgSobre img {
+    width:70%;
+    border-radius: 30px;
 }
