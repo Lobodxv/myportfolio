@@ -33,10 +33,13 @@ h2.titulo span {
 .flex{display: flex;}
 
 
+
+
+
+
 /* Estilo do cabeçalho */
 header {
     padding: 40px 4%;
-
 }
 header > .interface {
     display: flex;
@@ -92,7 +95,10 @@ header .btnContato button:hover{
 }
 
 
+
+
 /* Estilo do topo do site */
+
 section.topoSite{
     padding: 40px 4%;
 }
@@ -140,9 +146,12 @@ main .btnContato button:hover{
     animation-iteration-count: infinite;
 }
 
+
+
+
 /* ESTILO DAS ESPECIALIDADES  */
 section.especialidades{
-    padding: 40px 4%;
+    padding: 60px 4%;
 }
 
 section.especialidades .flex {
@@ -173,9 +182,17 @@ section.especialidades .especialidadesBox h3{
     margin: 15px 0;
 }
 
+section.especialidades .especialidadesBox:hover > h3 {
+    color:#c326ea;
+    transition: .2s;
+}
+
+
+
 /* Estilização da Pt.Sobre mim */
+
 section.sobre {
-    padding: 65px 4%;
+    padding: 80px 4%;
 }
 
 section.sobre .flex{
@@ -199,6 +216,7 @@ section.sobre .flex{
 .sobre .txtSobre p {
     margin: 20px 0;
     text-align: justify;
+    left: -100;
 }
 
 .sobre .txtSobre button {
@@ -221,3 +239,66 @@ section.sobre .flex{
     width:70%;
     border-radius: 30px;
 }
+
+
+
+
+/* Estilo sessão portfólio  */
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 45px 5px #ca2df12a; 
+}
+
+section.portfolio .flex {
+    gap: 80px;
+    justify-content: space-around;
+}
+
+.imgPort {
+    margin-top: 20px;
+    width: 360px;
+    height: 460px;
+    background-color:#ca2df1;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 6s;
+    position: relative;
+}
+
+.imgPort:hover {
+    background-position: 100% 100%;
+    transform: scale(1.06);
+}
+
+.imgPort .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+
+.imgPort:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+/* SCROLL REVEAL  */
+
+section.topoSite{visibility: hidden;}
+section.especialidades {visibility: hidden;}
+section.sobre {visibility: hidden;}
+section.portfolio{visibility: hidden;}
+
+
