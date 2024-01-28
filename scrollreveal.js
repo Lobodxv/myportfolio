@@ -60,6 +60,9 @@ ScrollReveal().reveal('section.sobre .btnSocial',{
 ScrollReveal().reveal('section.portfolio h2', {
     duration: 600
 });
+ScrollReveal().reveal('section.portfolio h3', {
+    duration: 600
+});
 ScrollReveal().reveal('section.portfolio #project1', {
     duration: 600,
     delay: 200
