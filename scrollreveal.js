@@ -75,4 +75,3 @@ ScrollReveal().reveal('section.portfolio #project3', {
     duration: 600,
     delay: 400
 });
-
