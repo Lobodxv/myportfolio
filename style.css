@@ -216,7 +216,6 @@ section.sobre .flex{
 .sobre .txtSobre p {
     margin: 20px 0;
     text-align: justify;
-    left: -100;
 }
 
 .sobre .txtSobre button {
@@ -294,11 +293,74 @@ section.portfolio .flex {
 
 
 
+/* ESTILO RODAPÉ  */
+
+section.rodape{
+    padding: 60px 4% 20px 4%;
+    color: #fff;
+}
+
+section.rodape .flex{
+    align-items: center;
+    text-align: justify;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+section.rodape .interface {
+    margin: 0px 0px 40px 0px;
+}
+
+section.rodape .elementsRight {
+    border-right: 2px solid #7d7d7d39;
+}
+
+footer div.logo {
+    padding-right: 50px;
+    width: max-content;
+}
+
+footer div.logo > a {
+    font-family: 'Licorice', cursive;
+    color:#ca2df1;
+    font-size: 50px;
+    text-decoration: none;
+}
+footer div.logo a:hover {
+    text-shadow: 0 0 20px #ffffff6c;
+    cursor: default;
+}
+footer div.logo > a > span {
+    font-family: 'Licorice', cursive;
+    color: #bababa;     
+}
+
+section.rodape .btnSocial {
+    margin: 20px 0;
+}
+
+.rodape .elementsRight button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:#ca2df1;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: .2s;
+}
+.rodape .elementsRight button:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 20px #ce09ffa0;
+}
+
+
+
+
 /* SCROLL REVEAL  */
 
 section.topoSite{visibility: hidden;}
 section.especialidades {visibility: hidden;}
 section.sobre {visibility: hidden;}
 section.portfolio{visibility: hidden;}
-
-
