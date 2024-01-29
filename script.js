@@ -1,6 +1,9 @@
 
 window.sr = ScrollReveal({ reset: true });
 
+
+var imgSobre = document.getElementById('imgSobre');
+
 // Sessão - Topo do site 
 ScrollReveal().reveal('section.topoSite .txtTopoSite h1',{
     duration: 1000,
@@ -11,7 +14,7 @@ ScrollReveal().reveal('section.topoSite .txtTopoSite p',{
 });
 ScrollReveal().reveal('section.topoSite .imgTopoSite',{
     duration: 1000,
-    delay: 300
+    delay: 300,
 });
 ScrollReveal().reveal('section.topoSite .btnContato',{
     duration: 1000,
@@ -45,6 +48,7 @@ ScrollReveal().reveal('section.sobre img ', {
     rotate: {x: 30,y: 30,z: 0},
     duration: 600,
     delay: 200
+    
 });
 ScrollReveal().reveal('section.sobre p',{
     duration: 600,

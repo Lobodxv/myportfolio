@@ -35,11 +35,11 @@ h2.titulo span {
 
 
 
-
-
 /* Estilo do cabeçalho */
 header {
     padding: 40px 4%;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
 }
 header > .interface {
     display: flex;
