@@ -350,6 +350,7 @@ section.rodape .btnSocial {
     margin: 0 6px;
     transition: .2s;
 }
+
 .rodape .elementsRight button:hover{
     transform: scale(1.04);
     box-shadow: 0 0 20px #ce09ffa0;
