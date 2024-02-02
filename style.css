@@ -35,6 +35,9 @@ h2.titulo span {
 
 
 
+
+
+
 /* Estilo do cabeçalho */
 header {
     padding: 40px 4%;
@@ -97,6 +100,9 @@ header .btnContato button:hover{
 
 
 
+
+
+
 /* Estilo do topo do site */
 
 section.topoSite{
@@ -149,6 +155,9 @@ main .btnContato button:hover{
 
 
 
+
+
+
 /* ESTILO DAS ESPECIALIDADES  */
 section.especialidades{
     padding: 60px 4%;
@@ -186,6 +195,9 @@ section.especialidades .especialidadesBox:hover > h3 {
     color:#c326ea;
     transition: .2s;
 }
+
+
+
 
 
 
@@ -243,6 +255,7 @@ section.sobre .flex{
 
 
 
+
 /* Estilo sessão portfólio  */
 
 section.portfolio {
@@ -290,6 +303,7 @@ section.portfolio .flex {
 .imgPort:hover .overlay {
     opacity: 1;
 }
+
 
 
 
@@ -356,6 +370,18 @@ section.rodape .btnSocial {
     transform: scale(1.04);
     box-shadow: 0 0 20px #ce09ffa0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -451,13 +477,41 @@ section.rodape .btnSocial {
     /* Sessão - Rodapé */
 
     section.rodape{
-        padding: 60px 8% 20px 8%;
+        padding: 20px 8% 20px 8%;
+        margin: 80px 0 0 0;
         color: #fff;
+        box-shadow: 0 0 40px 2px #7d7d7d31;
     }
 
     section.rodape .flex .elementsRight{
-        flex-direction: row;
-        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.rodape .elementsRight {
+        border-right: none;
+        border-bottom: 2px solid #ca2df1;
+    }
+
+    .rodape .btnSocial {
+        margin: 0px;
+    }
+    
+    .rodape .btnSocial button{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 120%;
+    }
+    
+    footer div.logo {
+        width: max-content;
+    }
+
+    .rodape .elementsLeft{
+        display: none;
+        visibility: hidden; 
     }
 }
 
