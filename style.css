@@ -235,7 +235,8 @@ section.sobre .flex{
 }
 
 .sobre .imgSobre img {
-    width:70%;
+    width:100%;
+    padding: 20px 0;
     border-radius: 30px;
 }
 
@@ -355,6 +356,111 @@ section.rodape .btnSocial {
     transform: scale(1.04);
     box-shadow: 0 0 20px #ce09ffa0;
 }
+
+
+
+
+/* \. RESPONSIVIDADE ./ */
+
+@media screen and (max-width: 1080px){
+    /* Estilos gerais */
+
+    .flex{
+        flex-direction: column;
+    }
+    h2.titulo {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+
+    /* Header  */
+    .menuDesktop, .btnContato{
+        display: none;
+    }
+
+
+
+    /* Topo do site */
+    .topoSite .flex {
+        flex-direction: column-reverse;
+    }
+    section.topoSite {
+        padding: 20px 4%;
+    }
+    section.topoSite .flex {
+        gap: 40px;
+    }
+    .topoSite h1 {
+        font-size: 30px;
+    }
+
+
+    /* Especialidades  */
+    section.especialidades{
+        padding: 20px 8%;
+    }
+    
+
+    /* Sessão - Sobre  */
+    section.sobre {
+        padding: 40px 8%;
+    }
+
+    .sobre .txtSobre h2 {
+        font-size: 32px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .sobre .imgSobre img {
+        border-radius: 55px;
+    }
+
+    /* Sessão - Portfólio  */
+
+    section.portfolio {
+        padding: 80px 4%;
+        box-shadow: 0 0 45px 5px #ca2df12a; 
+    }
+
+    section.portfolio .flex {
+        gap: 10px;
+        flex-direction: row;
+    }
+    
+    .imgPort {
+        margin-top: 25%;
+        width: 160px;
+        height: 230px;
+        background-color:#ca2df1;
+        background-size: cover;
+        background-position: 100% 0%;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: 3s;
+        position: relative;
+    }
+
+    .imgPort:hover {
+        background-position: 100% 100%;
+        transform: scale(1.05);
+    }
+
+
+    /* Sessão - Rodapé */
+
+    section.rodape{
+        padding: 60px 8% 20px 8%;
+        color: #fff;
+    }
+
+    section.rodape .flex .elementsRight{
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
 
 
 
