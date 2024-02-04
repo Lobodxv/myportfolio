@@ -32,6 +32,10 @@ h2.titulo span {
 
 .flex{display: flex;}
 
+.backgroundInicio {
+    background-image: url(images/backgroundTopo.png); 
+    background-size: cover;
+}
 
 
 
@@ -167,7 +171,6 @@ section.especialidades{
 
 section.especialidadesBg {
     background-color:#0b0b0b;
-    border-top: 2px solid #ca2df124;
 }
 
 section.especialidades .interface {
@@ -366,6 +369,11 @@ section.rodape .elementsRight {
     border-right: 2px solid #7d7d7d39;
 }
 
+footer {
+    background: rgb(154,0,255);
+    background: linear-gradient(0deg, rgba(154,0,255,0.4985643915769433) 0%, #0b0b0b 100%);
+}
+
 footer div.logo {
     padding-right: 50px;
     width: max-content;
@@ -422,61 +430,134 @@ section.rodape .btnSocial {
 
 
 
-/* \. RESPONSIVIDADE ./ */
+/* \. RESPONSIVIDADES GERAIS ./ */
 
-@media screen and (max-width: 1080px){
+
+/*  RESPONSIVIDADE DESKTOP's - Tela média  */
+@media screen and (max-width: 1060px){
+    /* Estilos gerais */
+
+
+    /* Inicio - Header */
+    .menuDesktop, header .btnContato {
+        display: none;
+    }
+
+
+    /*  Inicio - Content  */
+    section.topoSite .flex{
+        gap: 0px;
+    }
+}
+
+
+
+/* RESPONSIVIDADE DESKTOP's - Tela média menor  */
+
+@media screen and (max-width: 940px){
     /* Estilos gerais */
 
     .flex{
         flex-direction: column;
     }
     h2.titulo {
-        font-size: 32px;
+        font-size: 38px;
         line-height: 35px;
     }
 
-
-    /* Header  */
-    .menuDesktop, .btnContato{
-        display: none;
+    .backgroundInicio {
+        background-image: url(images/bgTopoMobile.png);
+        background-size: cover;
     }
-
 
 
     /* Topo do site */
-    .topoSite .flex {
-        flex-direction: column-reverse;
-    }
+
     section.topoSite {
-        padding: 20px 4%;
+        padding: 200px 10%;
     }
+
     section.topoSite .flex {
-        gap: 40px;
+        gap: 20px;
     }
+
+    .topoSite .imgTopoSite {
+        display: none;
+    }
+
+    .txtTopoSite {
+        margin-bottom: 60px;
+        font-size: 20px;
+    }
+
     .topoSite h1 {
-        font-size: 30px;
+        font-size: 55px;
+        line-height: 50px;
     }
+
+    .topoSite .btnContato button{
+        padding: 14px 70px;
+        font-size: 20px;
+    }
+
+
 
 
     /* Especialidades  */
     section.especialidades{
         padding: 20px 8%;
     }
+
+    section.especialidadesBg {
+        box-shadow: 0 -80px 100px 50px rgba(60, 0, 73, 0.158);
+    }
+
+    section.especialidades .flex {
+        gap: 30px;
+        flex-direction: row;
+        margin-top: 80px;
+    }
+
+    section.especialidades .especialidadesBox {
+        color: white;
+        padding: 40px;
+        margin: 50px 0;
+        border-radius: 30px;
+        transition: .2s;
+        cursor: pointer;
+    
+        background: #ca2df1;
+        background: linear-gradient(140deg, #ca2df1 50%, rgba(0,0,0,1) 50%);
+        background-position-x: 10px;
+        background-size: 1800px;
+    }
+    
+    section.especialidades .especialidadesBox:hover{
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.205);
+        background-position-x: 700px;
+    }
     
 
     /* Sessão - Sobre  */
     section.sobre {
         padding: 40px 8%;
+        margin: 80px 0;
+    }
+
+    section.sobre .flex {
+        flex-direction: row-reverse;
     }
 
     .sobre .txtSobre h2 {
-        font-size: 32px;
+        font-size: 38px;
         line-height: 35px;
-        text-align: center;
+        text-align: flex-start;
     }
 
     .sobre .imgSobre img {
-        border-radius: 55px;
+        border-radius: 40px;
+        width: 100%;
     }
 
     /* Sessão - Portfólio  */
@@ -492,9 +573,9 @@ section.rodape .btnSocial {
     }
     
     .imgPort {
-        margin-top: 25%;
-        width: 160px;
-        height: 230px;
+        margin-top: 5%;
+        width: 250px;
+        height: 400px;
         background-color:#ca2df1;
         background-size: cover;
         background-position: 100% 0%;
@@ -512,17 +593,10 @@ section.rodape .btnSocial {
 
     /* Sessão - Rodapé */
 
-
-    footer {
-        background: rgb(154,0,255);
-        background: linear-gradient(0deg, rgba(154,0,255,0.4985643915769433) 0%, rgba(0,0,0,0) 100%);
-    }
-
     section.rodape{
         padding: 20px 8% 20px 8%;
         margin: 80px 0 0 0;
         color: #fff;
-        box-shadow: 0 0 40px 2px #7d7d7d31;
     }
 
     section.rodape .flex .elementsRight{
@@ -556,6 +630,102 @@ section.rodape .btnSocial {
         visibility: hidden; 
     }
 }
+
+
+
+/* RESPONSIVIDADE TABLET/MOBILE - Tela grande (Esticada) */
+@media screen and (max-width: 800px){
+
+    /* Especialidades */
+    section.especialidades .flex {
+        flex-direction: column;
+    }
+
+    section.especialidades .especialidadesBox {
+        background: linear-gradient(140deg, #ca2df1 50%, rgba(0,0,0,1) 50%);
+        background-position-x: -130px;
+        background-size: 1800px;
+    }
+    
+    section.especialidades .especialidadesBox:hover{
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.205);
+        background-position-x: 800px;
+    }
+
+    /* Sessão - sobre  */
+
+    section.sobre {
+        margin: 80px 0 20px 0;;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    /* Inicio - Content */
+    section.topoSite {
+        padding: 180px 10%;
+    }
+
+    section.topoSite .txtTopoSite h1 {
+        font-size: 45px;
+    }
+
+    .txtTopoSite p {
+        font-size: 16px;
+    }
+
+    .topoSite .btnContato button {
+        padding: 10px 40px;
+        font-size: 18px;
+    }
+
+
+    /* Sessão - sobre  */
+    section.sobre .flex {
+        flex-direction: row;
+    }
+
+    section.sobre .imgSobre img {
+        width: 120%;
+    }
+
+
+    /* Sessão - Portfolio */
+    .imgPort {
+        height: 300px;
+        border-radius:30px;
+    }
+    .imgPort .overlay {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    /* Especialidades */
+    section.especialidadesBg{
+        background-color: rgba(60, 0, 73, 0.158);
+    }
+
+    /* Sessão - sobre */
+    section.sobre {
+        margin: 150px 4% 0 4%;
+    }
+    section.sobre .flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    section.sobre .imgSobre img {
+        display: none;
+    }
+
+}
+
+
+
+
 
 
 
