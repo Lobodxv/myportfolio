@@ -708,7 +708,7 @@ section.rodape .btnSocial {
 @media screen and (max-width: 550px){
     /* Topo do site */
     section.topoSite {
-        padding: 80px 4%;
+        padding: 80px 4%; 
     }
 
     /* Especialidades */
