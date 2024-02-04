@@ -668,11 +668,11 @@ section.rodape .btnSocial {
 
     /* Inicio - Content */
     section.topoSite {
-        padding: 180px 10%;
+        padding: 180px 4%;
     }
 
     section.topoSite .txtTopoSite h1 {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .txtTopoSite p {
