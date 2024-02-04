@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #0b0b0b;
     height: 100vh;
 
 }
@@ -41,7 +41,8 @@ h2.titulo span {
 /* Estilo do cabeçalho */
 header {
     padding: 40px 4%;
-    background-color: rgba(0, 0, 0, 0);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.8711134111847865) 0%, rgba(0,0,0,0) 100%);
     z-index: 2;
 }
 header > .interface {
@@ -106,7 +107,7 @@ header .btnContato button:hover{
 /* Estilo do topo do site */
 
 section.topoSite{
-    padding: 40px 4%;
+    padding: 60px 4%;
 }
 
 section.topoSite .flex{
@@ -161,7 +162,16 @@ main .btnContato button:hover{
 /* ESTILO DAS ESPECIALIDADES  */
 section.especialidades{
     padding: 60px 4%;
-    margin: 60px 0;
+    width: 100%;
+}
+
+section.especialidadesBg {
+    background-color:#0b0b0b;
+    border-top: 2px solid #ca2df124;
+}
+
+section.especialidades .interface {
+    margin-top: 60px;
 }
 
 section.especialidades .flex {
@@ -170,20 +180,25 @@ section.especialidades .flex {
 section.especialidades .especialidadesBox {
     color: white;
     padding: 40px;
-    margin-top: 50px;
+    margin: 100px 0;
     border-radius: 30px;
     transition: .2s;
     cursor: pointer;
 
+    background: #ca2df1;
+    background: linear-gradient(140deg, #ca2df1 50%, rgba(0,0,0,1) 50%);
+    background-position-x: -60px;
+    background-size: 1200px;
 }
 
 section.especialidades .especialidadesBox:hover{
     transform: scale(1.02);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.205);
+    background-position-x: 460px;
 }
 
 section.especialidades .especialidadesBox i{
-    color:#ca2df1;
+    color:#ffffff;
     font-size: 65px;
 }
 
@@ -196,6 +211,10 @@ section.especialidades .especialidadesBox:hover > h3 {
     color:#c326ea;
     transition: .2s;
 }
+section.especialidades .especialidadesBox:hover > i {
+    color:#c326ea;
+    transition: .2s;
+}
 
 
 
@@ -204,12 +223,15 @@ section.especialidades .especialidadesBox:hover > h3 {
 
 /* Estilização da Pt.Sobre mim */
 
+
 section.sobre {
     padding: 80px 4%;
+    background-color:rgb(142, 13, 171);
 }
 
-section.sobre .flex{
-    align-items: center
+section.sobre .flex{ 
+    align-items: center;
+    gap: 80px;
 }
 
 .sobre .txtSobre {
@@ -232,19 +254,28 @@ section.sobre .flex{
 }
 
 .sobre .txtSobre button {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: none;
-    background-color:#ca2df1;
-    font-size: 22px;
+
+    background: linear-gradient(225deg, rgba(0,0,0,1) 50%, rgba(236,0,255,1) 50%);
+    background-size: 1000px;
+    background-position-x: -100px;
+
+    
+    font-size: 35px;
+    color: white;
+    text-align: center;
     cursor: pointer;
-    margin: 0 6px;
-    transition: .2s;
+    margin: 40px 6px;
+    transition: .4s;
 }
 .sobre .txtSobre button:hover{
-    transform: scale(1.04);
-    box-shadow: 0 0 20px #ce09ffa0;
+    transform: scale(1.10);
+    box-shadow: inset 0px 0px 200px rgba(175, 4, 210, 0.84);
+    text-shadow:rgb(0, 0, 0);
+    background-position: 100px;
 }
 
 .sobre .imgSobre img {
@@ -266,6 +297,7 @@ section.portfolio {
 
 section.portfolio .flex {
     gap: 80px;
+    margin: 40px 0;
     justify-content: space-around;
 }
 
@@ -280,6 +312,8 @@ section.portfolio .flex {
     border-radius: 40px;
     transition: 6s;
     position: relative;
+
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.079);
 }
 
 .imgPort:hover {
@@ -299,6 +333,7 @@ section.portfolio .flex {
     height: 100%;
     opacity: 0;
     transition: .2s;
+    border-radius: 40px;
 }
 
 .imgPort:hover .overlay {
@@ -476,6 +511,12 @@ section.rodape .btnSocial {
 
 
     /* Sessão - Rodapé */
+
+
+    footer {
+        background: rgb(154,0,255);
+        background: linear-gradient(0deg, rgba(154,0,255,0.4985643915769433) 0%, rgba(0,0,0,0) 100%);
+    }
 
     section.rodape{
         padding: 20px 8% 20px 8%;
