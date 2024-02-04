@@ -636,6 +636,10 @@ section.rodape .btnSocial {
 /* RESPONSIVIDADE TABLET/MOBILE - Tela grande (Esticada) */
 @media screen and (max-width: 800px){
 
+    section.topoSite {
+        padding: 150px 4%;
+    }
+
     /* Especialidades */
     section.especialidades .flex {
         flex-direction: column;
