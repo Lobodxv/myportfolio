@@ -22,7 +22,7 @@ h2.titulo {
     color: #fff;
 }
 h2.titulo span {
-    color:#ca2df1;
+    color: #03abe1;
 }
 
 .interface{
@@ -57,7 +57,7 @@ header > .interface {
 
 header div.logo > a {
     font-family: 'Licorice', cursive;
-    color:#ca2df1;
+    color: #03abe1;
     font-size: 50px;
 }
 header div.logo a:hover {
@@ -93,13 +93,13 @@ header .btnContato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #ca2df1;
+    background-color: #03abe1;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
 }
 header .btnContato button:hover{
-    box-shadow: 0px 0px 15px #ca2df1;
+    box-shadow: 0px 0px 15px #03abe1;
 }
 
 
@@ -119,13 +119,13 @@ main .btnContato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #ca2df1;
+    background-color: #03abe1;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
 }
 main .btnContato button:hover{
-    box-shadow: 0px 0px 15px #ca2df1;
+    box-shadow: 0px 0px 15px #03abe1;
     transform: scale(1.05);
     transition: .2s;
 }
@@ -137,7 +137,7 @@ main .btnContato button:hover{
 }
 
 .topoSite h1 span{
-    color: #ca2df1;
+    color: #03abe1;
 }
 
 .topoSite .txtTopoSite p {
@@ -151,10 +151,6 @@ main .btnContato button:hover{
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-
-
-
-
 
 
 
@@ -183,8 +179,8 @@ section.especialidades .especialidadesBox {
     transition: .2s;
     cursor: pointer;
 
-    background: #ca2df1;
-    background: linear-gradient(140deg, #ca2df1 50%, rgba(0,0,0,1) 50%);
+    background: #03abe1;
+    background: linear-gradient(140deg, #03abe1 50%, rgba(0,0,0,1) 50%);
     background-position-x: -60px;
     background-size: 1200px;
 }
@@ -206,11 +202,11 @@ section.especialidades .especialidadesBox h3{
 }
 
 section.especialidades .especialidadesBox:hover > h3 {
-    color:#c326ea;
+    color:#03abe1;
     transition: .2s;
 }
 section.especialidades .especialidadesBox:hover > i {
-    color:#c326ea;
+    color: #03abe1;
     transition: .2s;
 }
 
@@ -224,7 +220,7 @@ section.especialidades .especialidadesBox:hover > i {
 
 section.sobre {
     padding: 80px 4%;
-    background-color:rgb(142, 13, 171);
+    background-color:#029acf;
 }
 
 section.sobre .flex{ 
@@ -242,7 +238,7 @@ section.sobre .flex{
     margin-bottom: 30px;}
 
 .sobre .txtSobre h2 span{
-    color:#ca2df1;
+    color: #03abe1;
     display: block;
 }
 
@@ -257,7 +253,7 @@ section.sobre .flex{
     border-radius: 50%;
     border: none;
 
-    background: linear-gradient(225deg, rgba(0,0,0,1) 50%, rgba(236,0,255,1) 50%);
+    background: linear-gradient(225deg, rgba(0,0,0,1) 50%, #03abe1 50%);
     background-size: 1000px;
     background-position-x: -100px;
 
@@ -271,7 +267,7 @@ section.sobre .flex{
 }
 .sobre .txtSobre button:hover{
     transform: scale(1.10);
-    box-shadow: inset 0px 0px 200px rgba(175, 4, 210, 0.84);
+    box-shadow: inset 0px 0px 200px #0177aa;
     text-shadow:rgb(0, 0, 0);
     background-position: 100px;
 }
@@ -303,7 +299,7 @@ section.portfolio .flex {
     margin-top: 20px;
     width: 360px;
     height: 460px;
-    background-color:#ca2df1;
+    background-color: #029acf;
     background-size: cover;
     background-position: 100% 0%;
     cursor: pointer;
@@ -335,7 +331,7 @@ section.portfolio .flex {
 }
 
 .imgPort:hover .overlay {
-    opacity: 1;
+    opacity: 1; 
 }
 
 
@@ -365,8 +361,8 @@ section.rodape .elementsRight {
 }
 
 footer {
-    background: rgb(154,0,255);
-    background: linear-gradient(0deg, rgba(154,0,255,0.4985643915769433) 0%, #0b0b0b 100%);
+    background: #006597;
+    background: linear-gradient(0deg, #00659748 0%, #0b0b0b 100%);
 }
 
 footer div.logo {
@@ -376,7 +372,7 @@ footer div.logo {
 
 footer div.logo > a {
     font-family: 'Licorice', cursive;
-    color:#ca2df1;
+    color:#03abe1;
     font-size: 50px;
     text-decoration: none;
 }
@@ -398,7 +394,7 @@ section.rodape .btnSocial {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color:#ca2df1;
+    background-color: #03abe1;
     font-size: 22px;
     cursor: pointer;
     margin: 0 6px;
@@ -407,7 +403,7 @@ section.rodape .btnSocial {
 
 .rodape .elementsRight button:hover{
     transform: scale(1.04);
-    box-shadow: 0 0 20px #ce09ffa0;
+    box-shadow: 0 0 20px #0177aa;
 }
 
 
@@ -521,8 +517,8 @@ section.rodape .btnSocial {
         transition: .2s;
         cursor: pointer;
     
-        background: #ca2df1;
-        background: linear-gradient(140deg, #ca2df1 50%, rgba(0,0,0,1) 50%);
+        background: #03abe1;
+        background: linear-gradient(140deg, #03abe1 50%, rgba(0,0,0,1) 50%);
         background-position-x: 10px;
         background-size: 1800px;
     }  
@@ -571,7 +567,7 @@ section.rodape .btnSocial {
         margin-top: 5%;
         width: 250px;
         height: 400px;
-        background-color:#ca2df1;
+        background-color: #03abe1;
         background-size: cover;
         background-position: 100% 0%;
         cursor: pointer;
@@ -602,7 +598,7 @@ section.rodape .btnSocial {
 
     section.rodape .elementsRight {
         border-right: none;
-        border-bottom: 2px solid #ca2df1;
+        border-bottom: 2px solid #03abe1;
     }
 
     .rodape .btnSocial {
@@ -641,7 +637,7 @@ section.rodape .btnSocial {
     }
 
     section.especialidades .especialidadesBox {
-        background: linear-gradient(140deg, #ca2df1 50%, rgba(0,0,0,1) 50%);
+        background: linear-gradient(140deg, #03abe1 50%, rgba(0,0,0,1) 50%);
         background-position-x: -130px;
         background-size: 1800px;
     }
